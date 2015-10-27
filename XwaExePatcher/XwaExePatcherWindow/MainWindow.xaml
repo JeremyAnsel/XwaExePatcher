@@ -1,0 +1,71 @@
+﻿<Window x:Class="XwaExePatcherWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Xwa Exe Patcher"
+        Height="400"
+        Width="525">
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom">
+            <TextBlock TextWrapping="Wrap">
+            <Run Foreground="Red"
+                 FontWeight="Bold">DISCLAIMER: Never apply a patch if you are not sure of what it does.</Run>
+            <Run>It is recommended to make a backup of XWingAlliance.exe.</Run>
+            </TextBlock>
+        </StatusBar>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0"
+                       Grid.Row="0"
+                       Text="Patch: " />
+            <TextBlock Grid.Column="0"
+                       Grid.Row="1"
+                       Text="XWingAlliance.exe: " />
+            <TextBlock Grid.Column="1"
+                       Grid.Row="0"
+                       Text="{Binding Patcher.FileName}"
+                       TextWrapping="Wrap" />
+            <TextBlock Grid.Column="1"
+                       Grid.Row="1"
+                       Text="{Binding Patcher.ExeFileName}"
+                       TextWrapping="Wrap" />
+        </Grid>
+        <ListBox ItemsSource="{Binding Patcher.Patches}"
+                 SelectionMode="Single"
+                 HorizontalContentAlignment="Stretch"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel>
+                        <Button DockPanel.Dock="Right"
+                                Margin="4 0"
+                                Content="Restore"
+                                IsEnabled="{Binding IsApplied}"
+                                Tag="{Binding .}"
+                                Click="RestoreButton_Click" />
+                        <Button DockPanel.Dock="Right"
+                                Margin="4 0"
+                                Content="Apply"
+                                IsEnabled="{Binding CanBeApplied}"
+                                Tag="{Binding .}"
+                                Click="ApplyButton_Click" />
+                        <Expander>
+                            <Expander.Header>
+                                <TextBlock Text="{Binding Name}"
+                                           TextWrapping="Wrap" />
+                            </Expander.Header>
+                            <TextBlock Text="{Binding Description}"
+                                       TextWrapping="Wrap" />
+                        </Expander>
+                    </DockPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</Window>

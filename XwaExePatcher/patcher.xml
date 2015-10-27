@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPatch>
+  <Patch Name="[Recommended] triangling to infinity" Description="Fix the 'triangling to infinity' glitch.">
+    <Item Offset="193C4A" From="750C" To="9090" />
+    <Item Offset="193C53" From="02" To="08" />
+  </Patch>
+  <Patch Name="[Recommended] disable briefing wireframe overlay" Description="Disable the briefing wireframe overlay.">
+    <Item Offset="07E09C" From="7D" To="EB"/>
+    <Item Offset="07E12E" From="7D" To="EB"/>
+    <Item Offset="07E1B9" From="47" To="90"/>
+  </Patch>
+  <Patch Name="[Recommended] disable XwaConfig.screenres reset" Description="Prevent the game from resetting the user resolution choice by using the resolution width">
+    <Item Offset="10A431" From="A134AD9100" To="E9AE000000" />
+  </Patch>
+  <Patch Name="remove joystick check" Description="Remove the joystick check.">
+    <Item Offset="138CB4" From="754E" To="EB4E" />
+  </Patch>
+  <Patch Name="show framerate" Description="Show in-flight framerate">
+    <Item Offset="05A3EA" From="85C07405" To="90909090" />
+    <Item Offset="0F165A" From="85C07405" To="90909090" />
+    <Item Offset="07978B" From="746F" To="EB6F" />
+  </Patch>
+  <Patch Name="show framerate, vertices, triangles" Description="Show in-flight framerate, SceneNumVerts, SceneNumTris, SceneNumTexChanges, SceneNumStateChanges">
+    <Item Offset="05A3EA" From="85C07405" To="90909090" />
+    <Item Offset="0F165A" From="85C07405" To="90909090" />
+    <Item Offset="07978B" From="746F" To="EB36" />
+  </Patch>
+  <Patch Name="show framerate, video memory" Description="Show in-flight framerate, TexThrash, TotalTex">
+    <Item Offset="05A3EA" From="85C07405" To="90909090" />
+    <Item Offset="0F165A" From="85C07405" To="90909090" />
+    <Item Offset="07978B" From="746F" To="EB0A" />
+  </Patch>
+  <Patch Name="crafts count per region" Description="Replace the craft count per region from 96 to 192.">
+    <Item Offset="14C2E" From="60000000C1E305" To="C0000000C1E306"/>
+  </Patch>
+  <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
+    <Item Offset="1A83AC" From="00008043" To="00000044"/>
+  </Patch>
+  <Patch Name ="backdrop scaling factor from 256.0f to 128.0f">
+    <Item Offset="1A83AC" From="00008043" To="00000043"/>
+  </Patch>
+  <Patch Name ="backdrop scaling factor from 256.0f to 64.0f">
+    <Item Offset="1A83AC" From="00008043" To="00008042"/>
+  </Patch>
+  <Patch Name ="backdrop scaling factor from 256.0f to 32.0f">
+    <Item Offset="1A83AC" From="00008043" To="00000042"/>
+  </Patch>
+  <Patch Name="remove textures size limit" Description="Remove the 256x256 texture size limit.">
+    <Item Offset="19564A" From="81790C000100007717" To="909090909090909090" />
+    <Item Offset="1956C2" From="817A10000100007717" To="909090909090909090" />
+  </Patch>
+  <Patch Name="opt textures count limit from 200 to 1024">
+    <Item Offset="0CC432" From="2003" To="0010" />
+    <Item Offset="0CC43A" From="2803" To="0810" />
+    <Item Offset="0CC445" From="2C03" To="0C10" />
+    <Item Offset="0CC44C" From="2003" To="0010" />
+    <Item Offset="0CC466" From="C800" To="0004" />
+    <Item Offset="0CC497" From="3003" To="1010" />
+    <Item Offset="0CC4C9" From="3003" To="1010" />
+    <Item Offset="0CC4E6" From="3003" To="1010" />
+    <Item Offset="0CC4EE" From="2003" To="0010" />
+  </Patch>
+  <Patch Name="[Fix] 32-bit bmp screenshot" Description="Fix misaligned flightscreen*.bmp screenshots.">
+    <Item Offset="136CDA" From="740140" To="909090"/>
+    <Item Offset="136D00" From="18" To="20"/>
+    <Item Offset="136B2E" From="03" To="04"/>
+    <Item Offset="136B35" From="0F8C50FFFFFFF6C3017445" To="9090909090909090909090"/>
+    <Item Offset="136B56" From="6A0056E8C237FFFF0FBFC083C408" To="8B44245C3BD80F8C29FFFFFFEB21"/>
+    <Item Offset="136C3B" From="03" To="04"/>
+    <Item Offset="136C43" From="7C8CF6C3017447" To="90909090909090"/>
+    <Item Offset="136C60" From="6A0056E8B836FFFF0FBFC083C408" To="8B44245C3BD80F8C65FFFFFFEB23"/>
+  </Patch>
+  <Patch Name="[Fix] disable a3d" Description="Disable the creation of an A3D device.">
+    <Item Offset="1A7CA1" From="558BEC83EC20C745" To="B8FFFFFFFFC20C00"/>
+  </Patch>
+  <Patch Name="[Experimental] replace malloc with calloc">
+    <Item Offset="19BCE0" From="A1B81E7B008B4C24045051E810000000" To="8B4C2404516A0190909090E8C0000000" />
+  </Patch>
+</ArrayOfPatch>

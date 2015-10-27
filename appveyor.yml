@@ -1,0 +1,30 @@
+version: 1.0.{build}
+configuration: Release
+
+init:
+- if "%APPVEYOR_REPO_NAME%" == "JeremyAnsel/XwaExePatcher" if "%APPVEYOR_REPO_BRANCH%"=="master" if not defined APPVEYOR_PULL_REQUEST_NUMBER set DEPLOY=True
+
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: 1.0.0
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+
+build:
+  project: XwaExePatcher\XwaExePatcher.sln
+  verbosity: minimal
+
+after_build:
+- XwaExePatcher\build-dist.cmd
+
+artifacts:
+- path: XwaExePatcher\dist\lib
+  name: JeremyAnsel.Xwa.ExePatcher
+  type: zip
+- path: XwaExePatcher\dist\Console
+  name: XwaExePatcherConsole
+  type: zip
+- path: XwaExePatcher\dist\Window
+  name: XwaExePatcher
+  type: zip

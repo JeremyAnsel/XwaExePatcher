@@ -15,3 +15,7 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+*.txt eol=crlf
+XwaExePatcher/patcher.xml eol=crlf
+XwaExePatcher/patcher.xsd eol=crlf
