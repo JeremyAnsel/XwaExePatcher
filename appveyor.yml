@@ -20,11 +20,11 @@ after_build:
 
 artifacts:
 - path: XwaExePatcher\dist\lib
-  name: JeremyAnsel.Xwa.ExePatcher
+  name: JeremyAnsel.Xwa.ExePatcher-$(APPVEYOR_BUILD_VERSION)
   type: zip
 - path: XwaExePatcher\dist\Console
-  name: XwaExePatcherConsole
+  name: XwaExePatcherConsole-$(APPVEYOR_BUILD_VERSION)
   type: zip
 - path: XwaExePatcher\dist\Window
-  name: XwaExePatcher
+  name: XwaExePatcher-$(APPVEYOR_BUILD_VERSION)
   type: zip
