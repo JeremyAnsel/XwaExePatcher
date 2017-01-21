@@ -33,6 +33,9 @@
   <Patch Name="crafts count per region" Description="Replace the craft count per region from 96 to 192.">
     <Item Offset="14C2E" From="60000000C1E305" To="C0000000C1E306"/>
   </Patch>
+  <Patch Name="disable S-Foil model filter">
+    <Item Offset="0FB86E" From="7419" To="EB19"/>
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
