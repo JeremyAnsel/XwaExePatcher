@@ -33,6 +33,9 @@
   <Patch Name="crafts count per region" Description="Replace the craft count per region from 96 to 192.">
     <Item Offset="14C2E" From="60000000C1E305" To="C0000000C1E306"/>
   </Patch>
+  <Patch Name="lasers count" Description="Replace the laser count from 64 to 256.">
+    <Item Offset="14C68" From="750BBA10000000" To="05C0000000EB06"/>
+  </Patch>
   <Patch Name="disable S-Foil model filter">
     <Item Offset="0FB86E" From="7419" To="EB19"/>
   </Patch>
