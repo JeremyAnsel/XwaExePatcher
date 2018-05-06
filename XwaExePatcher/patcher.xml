@@ -36,9 +36,6 @@
   <Patch Name="lasers count" Description="Replace the laser count from 64 to 256.">
     <Item Offset="14C68" From="750BBA10000000" To="05C0000000EB06"/>
   </Patch>
-  <Patch Name="disable S-Foil model filter">
-    <Item Offset="0FB86E" From="7419" To="EB19"/>
-  </Patch>
   <Patch Name="disable gun turret random rotation" Description="Disable the gun turret rotation when there is no targetted craft.">
     <Item Offset="001553" From="8A843160020000" To="EB2E9090909090"/>
   </Patch>  
