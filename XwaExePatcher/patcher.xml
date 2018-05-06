@@ -70,6 +70,30 @@
     <Item Offset="0CC4E6" From="3003" To="1010" />
     <Item Offset="0CC4EE" From="2003" To="0010" />
   </Patch>
+  <Patch Name="sound format from 22050 Hz to 44100 Hz">
+    <Item Offset="1379E9" From="22560000" To="44AC0000" />
+    <Item Offset="1379FF" From="88580100" To="10B10200" />
+    <Item Offset="1376D2" From="22560000" To="44AC0000" />
+    <Item Offset="1376E8" From="88580100" To="10B10200" />
+  </Patch>
+  <Patch Name="sound format from 22050 Hz to 48000 Hz">
+    <Item Offset="1379E9" From="22560000" To="80BB0000" />
+    <Item Offset="1379FF" From="88580100" To="00EE0200" />
+    <Item Offset="1376D2" From="22560000" To="80BB0000" />
+    <Item Offset="1376E8" From="88580100" To="00EE0200" />
+  </Patch>
+  <Patch Name="sound format from 22050 Hz to 88200 Hz">
+    <Item Offset="1379E9" From="22560000" To="88580100" />
+    <Item Offset="1379FF" From="88580100" To="20620500" />
+    <Item Offset="1376D2" From="22560000" To="88580100" />
+    <Item Offset="1376E8" From="88580100" To="20620500" />
+  </Patch>
+  <Patch Name="sound format from 22050 Hz to 96000 Hz">
+    <Item Offset="1379E9" From="22560000" To="00770100" />
+    <Item Offset="1379FF" From="88580100" To="00DC0500" />
+    <Item Offset="1376D2" From="22560000" To="00770100" />
+    <Item Offset="1376E8" From="88580100" To="00DC0500" />
+  </Patch>
   <Patch Name="[Fix] 32-bit bmp screenshot" Description="Fix misaligned flightscreen*.bmp screenshots.">
     <Item Offset="136CDA" From="740140" To="909090"/>
     <Item Offset="136D00" From="18" To="20"/>
