@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPatch>
-  <Patch Name="[Recommended] triangling to infinity" Description="Fix the 'triangling to infinity' glitch.">
+  <Patch Name="[Fix] triangling to infinity" Description="Fix the 'triangling to infinity' glitch. It is included in the opt limit hook.">
     <Item Offset="193C4A" From="750C" To="9090" />
     <Item Offset="193C53" From="02" To="08" />
   </Patch>
@@ -30,7 +30,7 @@
     <Item Offset="0F165A" From="85C07405" To="90909090" />
     <Item Offset="07978B" From="746F" To="EB0A" />
   </Patch>
-  <Patch Name="crafts count per region" Description="Replace the craft count per region from 96 to 192.">
+  <Patch Name="[Recommended] crafts count per region" Description="Replace the craft count per region from 96 to 192.">
     <Item Offset="14C2E" From="60000000C1E305" To="C0000000C1E306"/>
   </Patch>
   <Patch Name="lasers count" Description="Replace the laser count from 64 to 256.">
