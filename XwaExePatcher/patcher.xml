@@ -43,6 +43,11 @@
     <Item Offset="05C038" From="760A" To="EB0A" />
     <Item Offset="01B28E" From="7418" To="EB18" />
   </Patch>
+  <Patch Name ="disable starfield rendering">
+    <Item Offset="0DCFF0" From="A0AA6F7B00" To="C390909090" />
+    <Item Offset="059980" From="E8EB2A0B00E866360800E811310B00" To="909090909090909090909090909090" />
+    <Item Offset="0EF4AC" From="E8BFCF0100E83ADBFEFFE8E5D50100" To="909090909090909090909090909090" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
