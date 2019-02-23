@@ -43,6 +43,9 @@
     <Item Offset="05C038" From="760A" To="EB0A" />
     <Item Offset="01B28E" From="7418" To="EB18" />
   </Patch>
+  <Patch Name="Remove campaign rank limit">
+    <Item Offset="02E91C" From="24EF" To="33C0" />
+  </Patch>
   <Patch Name ="disable starfield rendering">
     <Item Offset="0DCFF0" From="A0AA6F7B00" To="C390909090" />
     <Item Offset="059980" From="E8EB2A0B00E866360800E811310B00" To="909090909090909090909090909090" />
