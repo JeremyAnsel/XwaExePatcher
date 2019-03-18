@@ -46,6 +46,9 @@
   <Patch Name="Remove campaign rank limit">
     <Item Offset="02E91C" From="24EF" To="33C0" />
   </Patch>
+  <Patch Name="Beam system for rebel starfighters" Description="Allow rebel starfighters to have a beam system.">
+    <Item Offset="01BABF" From="741E" To="EB29" />
+  </Patch>
   <Patch Name="[Fix] Fix beam HUD scaling">
     <Item Offset="06A960" From="75226814555B00FFD68B0DC81C8C0033C03BC7750F6888585B00FFD65F5E5D5B83C414C3" To="508B44242625FFFF000089442414DB442414D80DB8026000E8D3F0120066894424265890" />
     <Item Offset="0691AC" From="895C241881E1FFFF00008974241C2BC1895C242089442414DF6C2414DF6C241C" To="81E1FFFF00008974241C2BC189442414DB442414DB44241CD80DB80260009090" />
