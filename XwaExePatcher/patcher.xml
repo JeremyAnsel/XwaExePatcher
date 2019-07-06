@@ -85,6 +85,9 @@
     <Item Offset="0CC4E6" From="3003" To="1010" />
     <Item Offset="0CC4EE" From="2003" To="0010" />
   </Patch>
+  <Patch Name="backdrops format from 1555 to 4444">
+    <Item Offset="03156A" From="7406" To="9090" />
+  </Patch>
   <Patch Name="sound format from 22050 Hz to 44100 Hz">
     <Item Offset="1379E9" From="22560000" To="44AC0000" />
     <Item Offset="1379FF" From="88580100" To="10B10200" />
