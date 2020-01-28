@@ -79,6 +79,16 @@
   <Patch Name ="disable key_i: Target nearest incoming warhead">
     <Item Offset="0FECCC" From="A128968D00" To="EBF7909090" />
   </Patch>
+  <Patch Name ="set team to 9 for escape pods / pilots">
+    <Item Offset="003881" From="8A0C45F1DC8000" To="B1099090909090" />
+    <Item Offset="003A93" From="8A8198000000" To="B00990909090" />
+  </Patch>
+  <Patch Name ="enable escape pod / pilots ejection on skirmish missions">
+    <Item Offset="178BB6" From="C68429C90D000016" To="C68429C90D000000" />
+  </Patch>
+  <Patch Name ="set escape pods / pilots order to null">
+    <Item Offset="0042EB" From="0F87F4000000" To="90E9F4000000" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
