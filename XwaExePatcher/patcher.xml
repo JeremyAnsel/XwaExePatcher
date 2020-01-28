@@ -153,6 +153,9 @@
     <Item Offset="136C43" From="7C8CF6C3017447" To="90909090909090"/>
     <Item Offset="136C60" From="6A0056E8B836FFFF0FBFC083C408" To="8B44245C3BD80F8C65FFFFFFEB23"/>
   </Patch>
+  <Patch Name="display iMuse debug messages" Description="Messages are sent to OutputDebugString">
+    <Item Offset="185934" From="E836FEFFFF83C404" To="FF15B4905A009090" />
+  </Patch>
   <Patch Name="[Fix] disable a3d" Description="Disable the creation of an A3D device.">
     <Item Offset="1A7CA1" From="558BEC83EC20C745" To="B8FFFFFFFFC20C00"/>
   </Patch>
