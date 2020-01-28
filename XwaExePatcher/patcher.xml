@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPatch>
+  <Patch Name="[Recommended] set LARGEADDRESSAWARE flag">
+    <Item Offset="0000DE" From="0F" To="2F" />
+    <Item Offset="000120" From="000000" To="0EBF21" />
+  </Patch>
   <Patch Name="[Fix] triangling to infinity" Description="Fix the 'triangling to infinity' glitch. It is included in the opt limit hook.">
     <Item Offset="193C4A" From="750C" To="9090" />
     <Item Offset="193C53" From="02" To="08" />
