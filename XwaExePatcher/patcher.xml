@@ -65,6 +65,10 @@
     <Item Offset="059980" From="E8EB2A0B00E866360800E811310B00" To="909090909090909090909090909090" />
     <Item Offset="0EF4AC" From="E8BFCF0100E83ADBFEFFE8E5D50100" To="909090909090909090909090909090" />
   </Patch>
+  <Patch Name="set SatD and Probe object category from Satellite to Craft">
+    <Item Offset="1FB222" From="02" To="00" />
+    <Item Offset="1FB23A" From="02" To="00" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
