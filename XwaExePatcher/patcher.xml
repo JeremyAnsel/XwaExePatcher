@@ -69,6 +69,9 @@
     <Item Offset="1FB222" From="02" To="00" />
     <Item Offset="1FB23A" From="02" To="00" />
   </Patch>
+  <Patch Name ="fix ModelIndex_084_0_66_ContainerSphere not being hittable by AI">
+    <Item Offset="0119A6" From="0F842F010000" To="909090909090" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
