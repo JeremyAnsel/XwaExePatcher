@@ -76,6 +76,9 @@
     <Item Offset="0A6C09" From="7407" To="EB07" />
     <Item Offset="0A77E4" From="0303" To="0202" />
   </Patch>
+  <Patch Name ="disable key_i: Target nearest incoming warhead">
+    <Item Offset="0FECCC" From="A128968D00" To="EBF7909090" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
