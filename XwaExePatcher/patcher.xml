@@ -79,6 +79,12 @@
   <Patch Name ="disable key_i: Target nearest incoming warhead">
     <Item Offset="0FECCC" From="A128968D00" To="EBF7909090" />
   </Patch>
+  <Patch Name ="disable pilots ejecting">
+    <Item Offset="0036F4" From="381D18337700" To="EBEB90909090" />
+  </Patch>
+  <Patch Name ="disable escape pods ejecting">
+    <Item Offset="00374B" From="E8C00A0900" To="EB94909090" />
+  </Patch>
   <Patch Name ="set team to 9 for escape pods / pilots">
     <Item Offset="003881" From="8A0C45F1DC8000" To="B1099090909090" />
     <Item Offset="003A93" From="8A8198000000" To="B00990909090" />
