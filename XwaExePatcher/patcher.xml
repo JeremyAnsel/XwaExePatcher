@@ -4,11 +4,11 @@
     <Item Offset="0000DE" From="0F" To="2F" />
     <Item Offset="000120" From="000000" To="0EBF21" />
   </Patch>
-  <Patch Name="[Fix] triangling to infinity" Description="Fix the 'triangling to infinity' glitch. It is included in the opt limit hook.">
+  <Patch Name="[Fix,Hook] triangling to infinity" Description="Fix the 'triangling to infinity' glitch. It is included in the opt limit hook.">
     <Item Offset="193C4A" From="750C" To="9090" />
     <Item Offset="193C53" From="02" To="08" />
   </Patch>
-  <Patch Name="[Recommended] disable briefing wireframe overlay" Description="Disable the briefing wireframe overlay.">
+  <Patch Name="[Hook,Recommended] disable briefing wireframe overlay" Description="Disable the briefing wireframe overlay. It is included in the opt limit hook.">
     <Item Offset="07E09C" From="7D" To="EB"/>
     <Item Offset="07E12E" From="7D" To="EB"/>
     <Item Offset="07E1B9" From="47" To="90"/>
@@ -34,7 +34,7 @@
     <Item Offset="0F165A" From="85C07405" To="90909090" />
     <Item Offset="07978B" From="746F" To="EB0A" />
   </Patch>
-  <Patch Name="[Recommended] crafts count per region" Description="Replace the craft count per region from 96 to 192.">
+  <Patch Name="[Hook,Recommended] crafts count per region" Description="Replace the craft count per region from 96 to 192. It is included in the mission tie hook.">
     <Item Offset="14C2E" From="60000000C1E305" To="C0000000C1E306"/>
   </Patch>
   <Patch Name="lasers count" Description="Replace the laser count from 64 to 256.">
@@ -107,11 +107,11 @@
   <Patch Name ="backdrop scaling factor from 256.0f to 32.0f">
     <Item Offset="1A83AC" From="00008043" To="00000042"/>
   </Patch>
-  <Patch Name="remove textures size limit" Description="Remove the 256x256 texture size limit.">
+  <Patch Name="[Hook] remove textures size limit" Description="Remove the 256x256 texture size limit. It is included in the opt limit hook.">
     <Item Offset="19564A" From="81790C000100007717" To="909090909090909090" />
     <Item Offset="1956C2" From="817A10000100007717" To="909090909090909090" />
   </Patch>
-  <Patch Name="opt textures count limit from 200 to 1024">
+  <Patch Name="[Hook] opt textures count limit from 200 to 1024" Description="Remove the 200 textures count limit. It is included in the opt limit hook.">
     <Item Offset="0CC432" From="2003" To="0010" />
     <Item Offset="0CC43A" From="2803" To="0810" />
     <Item Offset="0CC445" From="2C03" To="0C10" />
