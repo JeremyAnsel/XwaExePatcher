@@ -42,8 +42,11 @@
   <Patch Name="lasers count" Description="Replace the laser count from 64 to 256.">
     <Item Offset="14C68" From="750BBA10000000" To="05C0000000EB06"/>
   </Patch>
-  <Patch Name="disable gun turret random rotation" Description="Disable the gun turret rotation when there is no targetted craft.">
+  <Patch Name="[Old] disable gun turret random rotation" Description="Disable the gun turret rotation when there is no targetted craft.">
     <Item Offset="001553" From="8A843160020000" To="EB2E9090909090"/>
+  </Patch>
+  <Patch Name="disable gun turret random rotation" Description="Disable the gun turret rotation when there is no targetted craft.">
+    <Item Offset="00155A" From="A801" To="EB27"/>
   </Patch>
   <Patch Name="remove warhead count limit" Description="Remove the warhead count limit of 9">
     <Item Offset="05C038" From="760A" To="EB0A" />
