@@ -96,7 +96,7 @@ namespace XwaExePatcherWindow
             }
         }
 
-        public SortedList<int, byte[]> Patches { get; }
+        public SortedList<int, byte[]> Patches { get; private set; }
 
         public int PatchesCount
         {
