@@ -14,6 +14,11 @@ namespace XwaExePatcherWindow
 
         private string comment;
 
+        public ZtFile()
+        {
+            this.Patches = new SortedList<int, byte[]>();
+        }
+
         public string FileName { get; private set; }
 
         public string Name
@@ -91,7 +96,7 @@ namespace XwaExePatcherWindow
             }
         }
 
-        public SortedList<int, byte[]> Patches { get; } = new SortedList<int, byte[]>();
+        public SortedList<int, byte[]> Patches { get; }
 
         public int PatchesCount
         {
