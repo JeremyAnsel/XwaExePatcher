@@ -128,5 +128,58 @@ namespace XwaExePatcherWindow
                 MessageBox.Show(this, ex.ToString());
             }
         }
+
+        private string Get202SaveFileName(string name)
+        {
+            char[] invalidChars = System.IO.Path.GetInvalidFileNameChars();
+            name = string.Join("_", name.Split(invalidChars, StringSplitOptions.RemoveEmptyEntries));
+
+            var dialog = new SaveFileDialog
+            {
+                AddExtension = true,
+                DefaultExt = "202",
+                FileName = name
+            };
+
+            if (dialog.ShowDialog(this) == true)
+            {
+                return dialog.FileName;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        private void Create202Button_Click(object sender, RoutedEventArgs e)
+        {
+            var source = (FrameworkElement)sender;
+            var patch = (PatchModel)source.Tag;
+
+            string filename = Get202SaveFileName(patch.Name);
+
+            if (string.IsNullOrEmpty(filename))
+            {
+                return;
+            }
+
+            try
+            {
+                var zt = new ZtFile();
+
+                foreach (PatchItemModel item in patch.Items)
+                {
+                    zt.Patches.Add(item.Offset, item.NewValues);
+                }
+
+                zt.Save(filename);
+
+                MessageBox.Show(".202 created.", patch.Name);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.ToString());
+            }
+        }
     }
 }
