@@ -135,12 +135,12 @@ namespace XwaExePatcherWindow
         {
             if (unmodifiedBytes == null)
             {
-                throw new ArgumentNullException(nameof(unmodifiedBytes));
+                throw new ArgumentNullException("unmodifiedBytes");
             }
 
             if (modifiedBytes == null)
             {
-                throw new ArgumentNullException(nameof(modifiedBytes));
+                throw new ArgumentNullException("modifiedBytes");
             }
 
             if (unmodifiedBytes.Length != modifiedBytes.Length)
@@ -279,12 +279,12 @@ namespace XwaExePatcherWindow
         {
             if (bytes == null)
             {
-                throw new ArgumentNullException(nameof(bytes));
+                throw new ArgumentNullException("bytes");
             }
 
             if (bytes.Length < this.TargetMinimumLength)
             {
-                throw new ArgumentOutOfRangeException(nameof(bytes));
+                throw new ArgumentOutOfRangeException("bytes");
             }
 
             if (bytes.Length == 0)
@@ -305,12 +305,12 @@ namespace XwaExePatcherWindow
         {
             if (offset < 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(offset));
+                throw new ArgumentOutOfRangeException("offset");
             }
 
             if (patch == null)
             {
-                throw new ArgumentNullException(nameof(patch));
+                throw new ArgumentNullException("patch");
             }
 
             for (int i = 0; i < patch.Length; i += 127)
