@@ -5,8 +5,8 @@ This tool will apply the content of "patcher.xml" to "XWingAlliance.exe".
 *** Requirements ***
 
 This tool requires:
-- Windows XP SP2 or superior
-- .NET framework 4.0
+- Windows 7 or superior
+- .NET framework 4.8
 
 
 *** Usage ***

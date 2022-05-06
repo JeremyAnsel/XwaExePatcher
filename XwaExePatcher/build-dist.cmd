@@ -4,24 +4,24 @@ setlocal
 cd "%~dp0"
 
 For %%a in (
-"JeremyAnsel.Xwa.ExePatcher\bin\Release\*.dll"
+"JeremyAnsel.Xwa.ExePatcher\bin\Release\net48\*.dll"
 ) do (
 xcopy /s /d "%%~a" dist\lib\
 )
 
 For %%a in (
-"XwaExePatcherConsole\bin\Release\*.dll"
-"XwaExePatcherConsole\bin\Release\*.exe"
+"XwaExePatcherConsole\bin\Release\net48\*.dll"
+"XwaExePatcherConsole\bin\Release\net48\*.exe"
 ) do (
 xcopy /s /d "%%~a" dist\Console\
 )
 
 For %%a in (
-"XwaExePatcherWindow\bin\Release\*.dll"
-"XwaExePatcherWindow\bin\Release\*.exe"
-"XwaExePatcherWindow\bin\Release\*.xml"
-"XwaExePatcherWindow\bin\Release\*.xsd"
-"XwaExePatcherWindow\bin\Release\*.txt"
+"XwaExePatcherWindow\bin\Release\net48\*.dll"
+"XwaExePatcherWindow\bin\Release\net48\*.exe"
+"XwaExePatcherWindow\bin\Release\net48\*.xml"
+"XwaExePatcherWindow\bin\Release\net48\*.xsd"
+"XwaExePatcherWindow\bin\Release\net48\*.txt"
 ) do (
 xcopy /s /d "%%~a" dist\Window\
 )

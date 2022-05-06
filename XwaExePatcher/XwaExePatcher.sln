@@ -1,19 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeremyAnsel.Xwa.ExePatcher", "JeremyAnsel.Xwa.ExePatcher\JeremyAnsel.Xwa.ExePatcher.csproj", "{0C5B990D-B127-4908-8EA5-8871FF4AED9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeremyAnsel.Xwa.ExePatcher", "JeremyAnsel.Xwa.ExePatcher\JeremyAnsel.Xwa.ExePatcher.csproj", "{AE3D54B1-3855-4274-BB15-3C891A4D8578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XwaExePatcherConsole", "XwaExePatcherConsole\XwaExePatcherConsole.csproj", "{48C490E7-940A-45FF-9861-45B607B5372F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XwaExePatcherConsole", "XwaExePatcherConsole\XwaExePatcherConsole.csproj", "{AEA842DE-0BD8-4D1E-ADB1-0DF0D92388A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XwaExePatcherWindow", "XwaExePatcherWindow\XwaExePatcherWindow.csproj", "{DB804A7A-EAFA-4E60-A8B4-DB86EE1FBB6B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0235ED5E-D460-4332-B871-7F38B0A6A105}"
-	ProjectSection(SolutionItems) = preProject
-		patcher.xml = patcher.xml
-		patcher.xsd = patcher.xsd
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XwaExePatcherWindow", "XwaExePatcherWindow\XwaExePatcherWindow.csproj", "{BC1220DE-0300-43D5-AD19-B80C05694047}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,20 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C5B990D-B127-4908-8EA5-8871FF4AED9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C5B990D-B127-4908-8EA5-8871FF4AED9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C5B990D-B127-4908-8EA5-8871FF4AED9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C5B990D-B127-4908-8EA5-8871FF4AED9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48C490E7-940A-45FF-9861-45B607B5372F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48C490E7-940A-45FF-9861-45B607B5372F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48C490E7-940A-45FF-9861-45B607B5372F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48C490E7-940A-45FF-9861-45B607B5372F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB804A7A-EAFA-4E60-A8B4-DB86EE1FBB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB804A7A-EAFA-4E60-A8B4-DB86EE1FBB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB804A7A-EAFA-4E60-A8B4-DB86EE1FBB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB804A7A-EAFA-4E60-A8B4-DB86EE1FBB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3D54B1-3855-4274-BB15-3C891A4D8578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3D54B1-3855-4274-BB15-3C891A4D8578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3D54B1-3855-4274-BB15-3C891A4D8578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3D54B1-3855-4274-BB15-3C891A4D8578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA842DE-0BD8-4D1E-ADB1-0DF0D92388A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA842DE-0BD8-4D1E-ADB1-0DF0D92388A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA842DE-0BD8-4D1E-ADB1-0DF0D92388A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA842DE-0BD8-4D1E-ADB1-0DF0D92388A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1220DE-0300-43D5-AD19-B80C05694047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1220DE-0300-43D5-AD19-B80C05694047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1220DE-0300-43D5-AD19-B80C05694047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1220DE-0300-43D5-AD19-B80C05694047}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F608BB82-5CA3-41E6-95D6-D9C94463ED15}
 	EndGlobalSection
 EndGlobal
