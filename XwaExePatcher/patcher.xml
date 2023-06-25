@@ -24,6 +24,12 @@
   <Patch Name="remove joystick check" Description="Remove the joystick check.">
     <Item Offset="138CB4" From="754E" To="EB4E" />
   </Patch>
+  <Patch Name="No CD check">
+    <Item Offset="12A3E0" From="A037C7AB00" To="33C040C390" />
+    <Item Offset="12A520" From="81EC5C010000" To="33C0C3909090" />
+    <Item Offset="157726" From="80BC241C01000001" To="885C2410EB639090" />
+    <Item Offset="157875" From="8D4C2412" To="8D4C2410" />
+  </Patch>
   <Patch Name="show framerate" Description="Show in-flight framerate">
     <Item Offset="05A3EA" From="85C07405" To="90909090" />
     <Item Offset="0F165A" From="85C07405" To="90909090" />
