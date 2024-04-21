@@ -144,6 +144,16 @@
   <Patch Name="display iMuse debug messages" Description="Messages are sent to OutputDebugString">
     <Item Offset="185934" From="E836FEFFFF83C404" To="FF15B4905A009090" />
   </Patch>
+  <Patch Name="Enable film recording in melee missions">
+    <Item Offset="100AF8" From="0F8586010000" To="909090909090." />
+  </Patch>
+  <Patch Name="Enable Filmroom Playback Options for all missions">
+    <Item Offset="0C2767" From="7409" To="EB29" />
+    <Item Offset="0C2820" From="7409" To="EB29" />
+    <Item Offset="108E64" From="0F844B030000" To="909090909090" />
+    <Item Offset="108F01" From="0F84AE020000" To="909090909090" />
+    <Item Offset="108F44" From="0F846B020000" To="909090909090" />
+  </Patch>
   <Patch Name="[Fix] disable a3d" Description="Disable the creation of an A3D device.">
     <Item Offset="1A7CA1" From="558BEC83EC20C745" To="B8FFFFFFFFC20C00"/>
   </Patch>
