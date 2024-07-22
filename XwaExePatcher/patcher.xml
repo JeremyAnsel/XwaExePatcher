@@ -108,6 +108,9 @@
   <Patch Name ="set escape pods / pilots order to null">
     <Item Offset="0042EB" From="0F87F4000000" To="90E9F4000000" />
   </Patch>
+  <Patch Name="Remove 1/3 throttle turn rate mechanic" Description="Applying this disables the 1/3rd throttle mechanic allowing the Player to turn at the maximum rate regardless of current speed">
+    <Item Offset="F9A60" From="663D555573098D" To="B9FFFF0000EB1E" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
