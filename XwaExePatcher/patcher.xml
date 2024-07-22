@@ -111,6 +111,10 @@
   <Patch Name="Remove 1/3 throttle turn rate mechanic" Description="Applying this disables the 1/3rd throttle mechanic allowing the Player to turn at the maximum rate regardless of current speed">
     <Item Offset="F9A60" From="663D555573098D" To="B9FFFF0000EB1E" />
   </Patch>
+  <Patch Name="Remove LES turn rate mechanic" Description="Applying this disables the Laser/Engines/Shields energy levels affecting a Players turn rate speed">
+    <Item Offset="F9B0E" From="BF04000000" To="BF00000000" />
+    <Item Offset="F9B13" From="2BF8" To="9090" />
+  </Patch>
   <Patch Name ="backdrop scaling factor from 256.0f to 512.0f">
     <Item Offset="1A83AC" From="00008043" To="00000044"/>
   </Patch>
