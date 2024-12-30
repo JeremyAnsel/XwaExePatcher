@@ -5,3 +5,6 @@
 Xwa Exe Patcher is a tool to apply patches to X-Wing Alliance exe.
 
 See http://www.xwaupgrade.com/phpBB3008/viewtopic.php?f=9&t=11282
+
+![XwaExePatcher](Images/XwaExePatcher.png)
+
